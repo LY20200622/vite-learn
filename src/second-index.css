@@ -1,0 +1,7 @@
+/* 用于多入口CSS */
+
+@config './tailwind.second.config.js';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/** @tailwind variants 定义类似于 hover、dark mode 等变体 */
+
+@layer base {
+  div {
+    @apply text-xl;
+    background-color: theme("borderRadius.lg");
+  }
+}
+
+@layer components {
+  .components-btn {
+    @apply bg-fuchsia-300 text-5xl text-amber-300;
+  }
+}
+
+@layer utilities {
+  .utilities-div {
+    @apply bg-red-300;
+    color: red;
+  }
+}
+
+.page {
+  border-bottom: 10px solid #999;
+}
+
+.chapter {
+  margin: 0 auto 20px;
+  width: 700px;
+  padding: 20px 0;
+  background-color: aquamarine;
+}
+
+.item {
+  margin: 20px 0;
+  border: 1px solid #999;
+}
+
+.my-diy-class {
+  color: red;
+}
+@media screen(md) {
+  .my-diy-class {
+    color: blue;
+  }
+}
+/*
+等同于
+@media (min-width: 768px) { ... }
+*/
